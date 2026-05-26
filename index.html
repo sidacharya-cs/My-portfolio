@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#050505" />
+  <title>Siddhantha Acharya — Cybersecurity Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Matrix background -->
+  <canvas id="matrix" aria-hidden="true"></canvas>
+
+  <!-- Custom cursor -->
+  <div id="cursor" aria-hidden="true">
+    <span class="cursor-ring"></span>
+    <span class="cursor-core"></span>
+  </div>
+
+  <!-- Loading / boot screen -->
+  <div id="boot" role="status" aria-live="polite">
+    <div class="boot-terminal">
+      <div class="boot-title">CYBER SECURITY PORTFOLIO</div>
+      <div id="boot-lines" class="boot-lines"></div>
+      <div class="boot-progress">
+        <span class="boot-progress-label">SYSTEM STATUS</span>
+        <span id="boot-status" class="boot-status">BOOTING...</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page wrapper -->
+  <div id="app" class="app" aria-hidden="true">
+    <!-- Sticky nav -->
+    <header class="nav">
+      <div class="nav-inner">
+        <a class="brand" href="#home" data-nav-brand>SIDDHANTHA</a>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Open navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav-links" id="navLinks" aria-label="Primary">
+          <a href="#home" data-nav-link>Home</a>
+          <a href="#about" data-nav-link>About</a>
+          <a href="#skills" data-nav-link>Skills</a>
+          <a href="#projects" data-nav-link>Projects</a>
+          <a href="#certifications" data-nav-link>Certifications</a>
+          <a href="#achievements" data-nav-link>Achievements</a>
+          <a href="#contact" data-nav-link>Contact</a>
+        </nav>
+
+        <a class="nav-cta" href="#contact" data-nav-cta>Contact</a>
+      </div>
+      <div class="nav-glow" aria-hidden="true"></div>
+    </header>
+
+    <!-- Sections -->
+    <main class="main">
+      <!-- HERO -->
+<section id="home" class="section hero section-reveal" data-reveal="up">
+        <div class="hero-grid">
+          <div class="hero-left">
+            <div class="terminal-tag">
+              <span class="dot"></span>
+              <span>SECURE SESSION</span>
+              <span class="slash">/</span>
+              <span class="muted">NEON CONSOLE</span>
+            </div>
+
+            <h1 class="hero-name">
+              <span class="glitch" data-glitch-text="SIDDHANTHA ACHARYA">SIDDHANTHA ACHARYA</span>
+            </h1>
+
+            <div class="hero-typing">
+              <span class="typing-label">ROLE:</span>
+              <span class="typing" id="typing"></span>
+              <span class="typing-cursor" aria-hidden="true"></span>
+            </div>
+
+            <p class="hero-sub">
+              Cybersecurity Student | Network Security Enthusiast | Aspiring Penetration Tester
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#" id="resumeBtn">Download Resume</a>
+              <a class="btn btn-outline" href="#contact">Contact Me</a>
+              <a class="btn btn-ghost" href="#projects">View Projects</a>
+            </div>
+
+            <div class="hero-stats">
+              <div class="stat-card glass">
+                <div class="stat-value" data-animate-count="96">96</div>
+                <div class="stat-label">Lab Mastery Signal</div>
+              </div>
+              <div class="stat-card glass">
+                <div class="stat-value" data-animate-count="120">120</div>
+                <div class="stat-label">Network Frames Captured</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-right">
+            <div class="profile-card glass float-anim">
+              <div class="profile-header">
+                <div class="profile-badge">ACTIVE</div>
+                <div class="profile-id">@CSA/01</div>
+              </div>
+              <div class="profile-body">
+                <div class="avatar" aria-hidden="true">
+                  <div class="avatar-core"></div>
+                  <div class="avatar-glow"></div>
+                </div>
+                <div class="profile-meta">
+                  <div class="meta-row">
+                    <span class="meta-k">LOCATION</span>
+                    <span class="meta-v">Mitra Park, Kathmandu, Nepal</span>
+                  </div>
+                  <div class="meta-row">
+                    <span class="meta-k">FOCUS</span>
+                    <span class="meta-v">Network Security • Web Security • AD</span>
+                  </div>
+                  <div class="meta-row">
+                    <span class="meta-k">TOOLS</span>
+                    <span class="meta-v">Nmap • Wireshark • Burp Suite</span>
+                  </div>
+                </div>
+              </div>
+              <div class="profile-footer">
+                <div class="scanline" aria-hidden="true"></div>
+                <div class="profile-hint">Hover to amplify glow. Move cursor to trace particles.</div>
+              </div>
+            </div>
+
+            <div class="floating-particles" aria-hidden="true"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section about section-reveal">
+        <div class="section-head">
+          <h2 class="section-title">ABOUT ME</h2>
+          <div class="section-subtitle">Futuristic terminal card</div>
+        </div>
+
+        <div class="terminal-card glass">
+          <div class="terminal-top">
+            <span class="t-dot red"></span>
+            <span class="t-dot yellow"></span>
+            <span class="t-dot green"></span>
+            <span class="terminal-path">~/cyber/about</span>
+          </div>
+
+          <div class="terminal-body">
+            <pre class="terminal-pre" aria-label="Professional summary">
+<span class="term-prompt">siddh@acharya</span>:~$ cat summary.txt
+
+<span class="term-text">Aspiring Cybersecurity Professional and undergraduate student pursuing a Bachelor's degree in Cybersecurity with hands-on experience in:</span>
+
+• Network Design
+• System Administration
+• Security Testing
+• Active Directory
+• Windows Server
+• Ethical Hacking Labs
+• Vulnerability Assessment
+• Traffic Analysis
+
+<span class="term-text">Passionate about:</span>
+Network Security
+Penetration Testing
+System Administration
+Continuous Learning
+            </pre>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="section section-reveal">
+        <div class="section-head">
+          <h2 class="section-title">SKILLS</h2>
+          <div class="section-subtitle">Animated progress + neon glow</div>
+        </div>
+
+        <div class="skills-grid" id="skillsGrid"></div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="section section-reveal">
+        <div class="section-head">
+          <h2 class="section-title">PROJECTS</h2>
+          <div class="section-subtitle">Premium cyber cards</div>
+        </div>
+
+        <div class="cards-grid" id="projectsGrid"></div>
+      </section>
+
+      <!-- CERTIFICATIONS -->
+      <section id="certifications" class="section section-reveal">
+        <div class="section-head">
+          <h2 class="section-title">CERTIFICATIONS</h2>
+          <div class="section-subtitle">Glowing badges with animation</div>
+        </div>
+
+        <div class="cards-grid" id="certsGrid"></div>
+      </section>
+
+      <!-- ACHIEVEMENTS -->
+      <section id="achievements" class="section section-reveal">
+        <div class="section-head">
+          <h2 class="section-title">ACHIEVEMENTS</h2>
+          <div class="section-subtitle">Terminal log feed</div>
+        </div>
+
+        <div class="log-card glass">
+          <div class="log-top">
+            <span class="log-title">> SYSTEM STATUS: SECURE</span>
+            <span class="log-cursor" aria-hidden="true"></span>
+          </div>
+          <div class="log-body" id="logBody"></div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section section-reveal">
+        <div class="section-head">
+          <h2 class="section-title">CONTACT</h2>
+          <div class="section-subtitle">Futuristic form + copy email</div>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info glass">
+            <div class="info-row"><span class="info-k">Name:</span><span class="info-v">Siddhantha Acharya</span></div>
+            <div class="info-row"><span class="info-k">Location:</span><span class="info-v">Mitra Park, Kathmandu, Nepal</span></div>
+            <div class="info-row"><span class="info-k">Phone:</span><span class="info-v">+977 9767994012</span></div>
+            <div class="info-row">
+              <span class="info-k">Email:</span>
+              <span class="info-v"><a href="mailto:siddacharya63@gmail.com" class="link">siddacharya63@gmail.com</a></span>
+            </div>
+            <div class="info-row"><span class="info-k">LinkedIn:</span><span class="info-v"><a class="link" href="https://linkedin.com/in/siddhanchera-acharya-819641340" target="_blank" rel="noreferrer">linkedin.com/in/siddhantha-acharya-819641340</a></span></div>
+
+            <div class="info-actions">
+              <button class="btn btn-outline" id="copyEmailBtn" type="button">Copy Email</button>
+              <a class="btn btn-ghost" href="https://linkedin.com/in/siddhantha-acharya-819641340" target="_blank" rel="noreferrer">Open LinkedIn</a>
+            </div>
+          </div>
+
+          <form class="contact-form glass" id="contactForm">
+            <div class="form-head">
+              <span class="form-title">secure_send()</span>
+              <span class="form-hint">No backend required — demo mode</span>
+            </div>
+
+            <label class="field">
+              <span class="field-label">Your Name</span>
+              <input type="text" name="name" required autocomplete="name" />
+            </label>
+
+            <label class="field">
+              <span class="field-label">Your Email</span>
+              <input type="email" name="email" required autocomplete="email" />
+            </label>
+
+            <label class="field">
+              <span class="field-label">Message</span>
+              <textarea name="message" required rows="5"></textarea>
+            </label>
+
+            <div class="form-actions">
+              <button class="send-btn" type="submit" id="sendBtn">
+                <span class="send-btn-glow" aria-hidden="true"></span>
+                <span class="send-btn-text">Send Message</span>
+                <span class="send-btn-icon" aria-hidden="true">▸</span>
+              </button>
+              <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-inner">
+          <div>© 2026 Siddhantha Acharya</div>
+          <div>Cybersecurity Portfolio</div>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
